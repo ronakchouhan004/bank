@@ -30,7 +30,9 @@ const Signup = () => {
       address:'',
       account_no:'',
       mobile:'',
-      password:''  
+      password:'',
+      prev_bal:"50000",  
+      current_bal:"50000" 
     })
 
     const [error,setError] = useState({
@@ -54,7 +56,9 @@ const Signup = () => {
             address:'',
             account_no:'',
             mobile:'',
-            password:'' 
+            password:'',
+            prev_bal:"50000",  
+            current_bal:"50000" 
         })
     }
 
@@ -71,7 +75,9 @@ const Signup = () => {
             address:data.address,
             account_no:data.account_no,
             mobile:data.mobile,
-            password:data.password
+            password:data.password,
+            prev_bal:data.prev_bal,
+            current_bal:data.current_bal
         }).then(res=>{
             if(res.status==200){
                 toast.success("SuccessFully Registered!");

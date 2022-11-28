@@ -1,20 +1,20 @@
 import React from 'react'
 import { UncontrolledCarousel } from 'reactstrap'
 import Base from '../components/Base'
-import BaseHome from '../components/BaseHome'
+
 import Example from '../components/MyNavbar'
 
 
-const Home = () => {
+const Home_Before_Log = () => {
     return (
-     <BaseHome>
+     <Base>
      HOMEPAGE
      
-     </BaseHome>
+     </Base>
       
        
      
     )
   }
   
-  export default Home
+  export default Home_Before_Log
